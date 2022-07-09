@@ -2,117 +2,33 @@ body {
   width: 320px;
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
   background-color: #f9f9fa;
 }
 
 .header-file {
   display: flex;
   flex-direction: row;
-  background-color: rgb(#fff);
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(IMAGES/image-1.svg);
 }
-
-a {
-  color: #000;
-}
-
-/* header */
 
 .header {
-  position: fixed;
+  display: flex;
+  flex-direction: row;
   width: 320px;
-  z-index: 3;
+  height: auto;
 }
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-}
-
-.header li a {
-  display: flex;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
+.nav-btn {
+  float: left;
+  height: 14px;
+  width: 20px;
+  margin-top: 20px;
+  margin-left: 280px;
   cursor: pointer;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
 }
 
-.header .menu-icon .nav-icon {
-  background: #333;
-  display: flex;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .nav-icon::before,
-.header .menu-icon .nav-icon::after {
-  background: #333;
-  content: '';
-  display: flex;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .nav-icon::before {
-  top: 5px;
-}
-
-.header .menu-icon .nav-icon::after {
-  top: -5px;
-}
-
-.menu-btn .header {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-/* ===================================== */
 .section {
   width: 100%;
   display: flex;
@@ -166,6 +82,8 @@ a {
   height: 160px;
   margin-top: 40px;
   margin-bottom: 0;
+  background-image: url(images/image-2.svg);
+  background-repeat: no-repeat;
 }
 
 .project-section {
