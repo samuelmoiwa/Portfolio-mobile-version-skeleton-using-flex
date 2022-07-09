@@ -20,7 +20,7 @@ a {
 
 .header {
   position: fixed;
-  width: 100%;
+  width: 320px;
   z-index: 3;
 }
 
